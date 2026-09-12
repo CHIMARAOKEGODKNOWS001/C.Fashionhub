@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Thread | Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a href="#" class="logo">URBAN<span>THREAD</span></a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="cart-btn" id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div>
+      <p class="eyebrow">NEW SEASON COLLECTION</p>
+      <h1>Style that speaks for you.</h1>
+      <p class="hero-text">Discover quality fashion pieces designed for everyday confidence, comfort and style.</p>
+      <a href="#shop" class="primary-btn">Shop Collection</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="shop">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">OUR COLLECTION</p>
+        <h2>Featured Products</h2>
+      </div>
+      <select id="categoryFilter">
+        <option value="all">All Products</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+        <option value="unisex">Unisex</option>
+      </select>
+    </div>
+    <div class="products" id="products"></div>
+  </div>
+</section>
+
+<section class="promo">
+  <div class="container promo-inner">
+    <div>
+      <p class="eyebrow">QUALITY • STYLE • VALUE</p>
+      <h2>Upgrade your wardrobe.</h2>
+      <p>Order your favourite pieces directly through WhatsApp.</p>
+    </div>
+    <a class="primary-btn" href="#contact">Contact Us</a>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div>
+      <p class="eyebrow">ABOUT US</p>
+      <h2>Fashion made simple.</h2>
+      <p>Urban Thread is a sample fashion brand focused on stylish, comfortable and affordable clothing. Replace this text with your real business story.</p>
+      <p>We make it easy for customers to browse products, choose what they like and place an order from their phone.</p>
+    </div>
+    <div class="about-card">
+      <div><strong>Quality</strong><span>Carefully selected pieces</span></div>
+      <div><strong>Affordable</strong><span>Fair prices for everyday fashion</span></div>
+      <div><strong>Easy Ordering</strong><span>Order quickly on WhatsApp</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container contact-box">
+    <div>
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2>Ready to place an order?</h2>
+      <p>Send us a message on WhatsApp and we'll help you with your order.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="whatsapp-btn" id="whatsappBtn" target="_blank" href="#">Order on WhatsApp</a>
+      <p>Phone: +234 800 000 0000</p>
+      <p>Email: hello@urbanthread.com</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Urban Thread. All rights reserved.</p>
+    <p>Fashion • Style • Confidence</p>
+  </div>
+</footer>
+
+<div class="cart-modal" id="cartModal">
+  <div class="cart-panel">
+    <button class="close" id="closeCart">×</button>
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <div class="cart-total">Total: <strong id="cartTotal">₦0</strong></div>
+    <button class="checkout-btn" id="checkoutBtn">Order Cart on WhatsApp</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
